@@ -68,11 +68,11 @@ public class SqlInjectionLesson6b extends AssignmentEndpoint {
           password = results.getString("password");
         }
       } catch (SQLException sqle) {
-        sqle.printStackTrace();
+        // Handle exception appropriately.
         // do nothing
       }
     } catch (Exception e) {
-      e.printStackTrace();
+      // Handle exception appropriately.
       // do nothing
     }
     return (password);
